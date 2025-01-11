@@ -36,5 +36,6 @@ p:nth-of-type(2){
 img{
     display: block;
     margin: 20px auto;
+    padding-top: 40px;
     height: 150px;
 }
