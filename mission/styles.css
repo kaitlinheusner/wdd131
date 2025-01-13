@@ -26,11 +26,16 @@ h2{
 }
 
 main {
+    padding-top: 40px;
     text-align: left;
 }
 
 p:nth-of-type(2){
     text-align: left;
+}
+
+ol li {
+    margin-bottom: 15px; 
 }
 
 img{
