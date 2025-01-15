@@ -1,0 +1,1 @@
+thme = document.getElementById("theme").addEventListener("change")

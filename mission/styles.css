@@ -44,3 +44,8 @@ img{
     padding-top: 40px;
     height: 150px;
 }
+
+.dark{
+    background-color: #333;
+    color: white;
+}
