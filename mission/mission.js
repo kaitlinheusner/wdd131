@@ -11,7 +11,6 @@ function changeTheme() {
         document.body.classList.remove("dark");
         document.querySelector(".logo_img").src = "byui-logo_blue.webp"
     }
-
 }
 
 themeSelector.addEventListener("change", changeTheme)
