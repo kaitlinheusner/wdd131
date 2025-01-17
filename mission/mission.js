@@ -6,10 +6,10 @@ function changeTheme() {
 
     if (currentValue == "dark"){
         document.body.classList.add("dark");
-        document.querySelector(".logo_img").src = "/mission/byui-logo_white.png"
+        document.querySelector(".logo_img").src = "byui-logo_white.png"
     }else{
         document.body.classList.remove("dark");
-        document.querySelector(".logo_img").src = "/mission/byui-logo_blue.webp"
+        document.querySelector(".logo_img").src = "byui-logo_blue.webp"
     }
 
 }
