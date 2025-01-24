@@ -20,7 +20,7 @@ header {
     padding-top: 1em;
 }
 
-h1{
+h1 {
     margin: 0;
     padding-bottom: 0.5em;
 }
@@ -56,6 +56,7 @@ button {
     border: none;
     font: var(--primary-font);
     color: white;
+    font-size: 1.4em;
 }
 
 img {
@@ -65,11 +66,11 @@ img {
     align-self: center;
 }
 
-.gallery img{
+.gallery img {
     margin: 1em auto;
 }
 
-.gallery figure{
+.gallery figure {
     box-shadow: 10px 10px 15px #333;
     display: flex;
     justify-content: center;
@@ -77,14 +78,14 @@ img {
     background-color: white;
 }
 
-footer{
+footer {
     background-color: #52489c;
     color: white;
     margin: 0;
     padding: 0.5em 0;
 }
 
-footer p{
+footer p {
     padding-left: 3em;
 }
 
@@ -92,25 +93,25 @@ footer p{
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-right: 1em;
     }
 
-    .gallery figure{
+    .gallery figure {
         box-shadow: 10px 10px 15px #333;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: white;
         padding: 0.5em;
-        width: 90%;
     }
 }
 
 @media screen and (min-width:1000px) {
-    button{
+    button {
         display: none;
     }
 
-    nav{
+    nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -119,13 +120,13 @@ footer p{
         padding-top: 2em;
     }
 
-    .gallery{
+    .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         width: 60%;
     }
 
-    .gallery figure{
+    .gallery figure {
         box-shadow: 10px 10px 15px #333;
         display: flex;
         justify-content: center;
