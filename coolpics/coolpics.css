@@ -17,12 +17,12 @@ header {
     display: block;
     align-items: center;
     justify-content: center;
+    padding-top: 1em;
 }
 
-nav {
-    font-family: Arial, Helvetica,sans-serif;
-    color: white;
-    text-align: center;
+h1{
+    margin: 0;
+    padding-bottom: 0.5em;
 }
 
 h1, h2 {
@@ -30,30 +30,110 @@ h1, h2 {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+    color: white;
+    text-align: center;
+    gap: 0.5em;
+    margin: 0;
+    padding-bottom: 1em;
+}
 
 body {
     font-family: var(--primary-font);
     font-size: 1.2em;
+    margin: 0;
   }
 
+a:link, a:visited {
+    color: white;
+}
 
-a:link,
-a:visited {
-    color: var(--accent-color);
-  }
+button {
+    background-color: #52489c;
+    border: none;
+    font: var(--primary-font);
+    color: white;
+}
 
 img {
     max-width: 100%;
+    height: auto;
     object-fit: cover;
     align-self: center;
 }
 
+.gallery img{
+    margin: 1em auto;
+}
+
 .gallery figure{
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    box-shadow: 10px 10px 15px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
 }
 
 footer{
     background-color: #52489c;
     color: white;
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+footer p{
+    padding-left: 3em;
+}
+
+@media screen and (min-width: 700px){
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery figure{
+        box-shadow: 10px 10px 15px #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 0.5em;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    button{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+        padding-top: 2em;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+    }
+
+    .gallery figure{
+        box-shadow: 10px 10px 15px #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        width: 60%;
+        margin-left: 290px;
+        margin-bottom: 50px;
+    }
 }
