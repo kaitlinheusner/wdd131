@@ -104,6 +104,10 @@ footer p {
         background-color: white;
         padding: 0.5em;
     }
+
+    .gallery img{
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width:1000px) {
@@ -136,5 +140,9 @@ footer p {
         width: 60%;
         margin-left: 290px;
         margin-bottom: 50px;
+    }
+
+    .gallery img{
+        max-width: 100%;
     }
 }
