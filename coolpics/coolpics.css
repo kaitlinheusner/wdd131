@@ -10,13 +10,17 @@
     --secondary-font: Mooli, san-serif;
     }
 
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    margin: 0;
+} 
+
 header {
     background-color: #52489c;
     margin: 0;
     color: white;
-    display: block;
-    align-items: center;
-    justify-content: center;
     padding-top: 1em;
 }
 
@@ -41,32 +45,19 @@ nav {
     padding-bottom: 1em;
 }
 
-body {
-    font-family: var(--primary-font);
-    font-size: 1.2em;
-    margin: 0;
-  }
+button {
+    all: unset;
+}
 
 a:link, a:visited {
     color: white;
 }
 
-button {
-    background-color: #52489c;
-    border: none;
-    font: var(--primary-font);
-    color: white;
-    font-size: 1.4em;
-}
-
-img {
+.gallery img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
     align-self: center;
-}
-
-.gallery img {
     margin: 1em auto;
 }
 
