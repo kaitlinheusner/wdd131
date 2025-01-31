@@ -45,12 +45,44 @@ nav {
     padding-bottom: 1em;
 }
 
+.hide{
+    display: none
+}
+
 button {
-    all: unset;
+    background: none;
+    border: none;
+    color: white;
+    font: inherit;
 }
 
 a:link, a:visited {
     color: white;
+}
+
+.viewer{
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.75);
+    place-items: center;
+    z-index: 10;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.viewer img{
+    max-height: 100%;
+}
+
+.close-viewer{
+    position: fixed;
+    color: white;
+    top: 15px;
+    right: 15px;
 }
 
 .gallery img {
@@ -146,4 +178,32 @@ footer p {
         width: 100%;
         margin: 0;
     }
+
+    
+.viewer{
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(0, 0, 0, 0.75);
+    place-items: center;
+    z-index: 10;
+    height: 90%;
+    max-height: 90%;
+    width: 90%;
+    max-width: 90%;
+}
+
+.viewer img{
+    max-height: 100%;
+    padding: 15px;
+}
+
+.close-viewer{
+    position: absolute;
+    color: white;
+    top: 15px;
+    right: 15px;
+}
 }
