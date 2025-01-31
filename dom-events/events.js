@@ -1,20 +1,35 @@
 // events.js
 let tasks = [];
 
+function newTaskItem(task){
+  return `<li ${task.completed ? 'class="strike"' : ""}>
+   <p>${task.detail}</p>
+   <div>
+     <span data-function="delete">❎</span>
+     <span data-function="complete">✅</span>
+   </div>
+ </li>`;
+}
+
 function renderTasks(tasks) {
   // get the list element from the DOM
-  todoList = getElementById("todoList")
+  const todoList = document.getElementById("todoList");
   // loop through the tasks array. transform (map) each task object into the appropriate HTML to represent a to-do.
+ const listItemsHtml = tasks.map(newTaskItem).join("");
+ todoList.innerHTML = listItemsHtml
 }
 
 function newTask() {
   // get the value entered into the #todo input
   let taskName = document.getElementById("todo").value;
   // add it to our arrays tasks
-  tasks.push(taskName)
+  tasks.push({detail: taskName, completed:false});
   // render out the list
+  renderTasks(tasks);
+  
+  // clear the input
+  document.getElementById("todo").value ="";
 
-  // console.log("I'm here in the newTask.");
 }
 
 function removeTask(taskElement) {
@@ -32,7 +47,7 @@ function removeTask(taskElement) {
 function completeTask(taskElement) {
   // In this case we need to find the index of the task so we can modify it.
   const taskIndex = tasks.findIndex(
-    (task) => task.detail === taskElement.childNodes[0].innerText
+    (task) => task.detail === taskElement.childNodes[1].innerText
   );
   // once we have the index we can modify the complete field.
   // tasks[taskIndex].completed ? false : true is a ternary expression.
@@ -48,12 +63,18 @@ function manageTasks(event) {
   console.log(event.target);
   console.log(event.currentTarget);
   // event.target will point to the actual icon clicked on. We need to get the parent li to work with however. HINT: Remember element.closest()? Look it up if you don't
-
+  const parentItem = event.target.closest("li")
   // because we added 'data-action="delete"' to each icon in a task we can access a dataset property on our target (e.target.dataset.action)
   // use that in a couple of if statements to decide whether to run removeTask or completeTask
+  if (event.target.dataset.function === "delete"){
+    removeTask(parentItem)
+  } else if (event.target.dataset.function === "complete"){
+    completeTask(parentItem)
+  }
 }
 
 // Add your event listeners here
 // We need to attach listeners to the submit button and the list. Listen for a click, call the 'newTask' function on submit and call the 'manageTasks' function if either of the icons are clicked in the list of tasks.
 button = document.getElementById("submitTask");
 button.addEventListener("click", newTask);
+document.querySelector("#todoList").addEventListener("click", manageTasks);
