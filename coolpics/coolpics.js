@@ -15,33 +15,37 @@ function handleResize(){
     }
 }
 
-function viewerTemplate(pic,alt) {
+function viewerTemplate(pic, alt) {
     return `<div class="viewer">
         <button class="close-viewer">X</button>
         <img src="${pic}" alt="${alt}">
-    </div>`
+    </div>`;
 }
 
 function viewHandler(event){
-   const figure = event.target
+    const img = event.target.closest("figure img");
+    const src = img.getAttribute("src");
+    const alt = img.getAttribute("alt");
 
-   const src = img.getAttribute("src");
-   const srcParts = src.spplits("-");
+    const srcParts = src.split("-");
+    let newSrc = `${srcParts[0]}-full.jpeg`;
+    let viewerHtml = viewerTemplate(newSrc, alt);
+    document.body.insertAdjacentHTML("afterbegin", viewerHtml);
 
-   const newSrc = `${srcParts[0]-CSSFontFeatureValuesRule,jpeg}`;
-   const viewerHtml = viewerTemplate(newSrc);
-  document.body.insertAdjacentHTML("afterbegin", viewerHtml)
-
-  const closeButton = document.querySelector("close-viewer");
-  closeButton.addEventListener("click", closseViewer)
+    const closeButton = document.querySelector(".close-viewer");
+    closeButton.addEventListener("click", closeViewer);
 }
 
-function closeButton(){
-    const viewer = document.querySelector(".viewer")
-    viewer.remove()
+function closeViewer(){
+    const viewer = document.querySelector(".viewer");
+    if (viewer) viewer.remove();
+}
+
+const gallery = document.querySelector(".gallery")
+
+if (gallery) {
+    gallery.addEventListener("click", viewHandler);
 }
 
 handleResize();
 window.addEventListener("resize", handleResize);
-gallery = document.getElementById(".gallery")
-gallery.addEventListener("click", viewHandler)
