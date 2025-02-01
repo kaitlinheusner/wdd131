@@ -83,6 +83,7 @@ a:link, a:visited {
     color: white;
     top: 15px;
     right: 15px;
+    cursor: pointer;
 }
 
 .gallery img {
@@ -133,11 +134,8 @@ footer p {
     }
 }
 @media screen and (min-width:1000px) {
-    button {
-        background: none;
-        border: none;
-        color: white;
-        font: inherit;
+    .menu-button{
+        display: none;
     }
 
     nav {
