@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2{
+    font-family: "Lora", Impact, serif;
+}
+
+h2{
+    color: #AF1B3F;
+}
+
+a{
+    text-decoration: none;
+    color: #AF1B3F;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav{
+    max-width: 100%;
+    border-top: 2px solid #EFC69B;
+    border-bottom: 2px solid #EFC69B;
+}
+
+.main-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: end;
+    justify-items: center;
+    list-style:none;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.article-filter-container{
+    display: grid;
+    grid-template-columns: 4fr 300px;
+    gap: 20px;
+}
+
+.article-content{
+    display: grid;
+    grid-template-columns: 400px 5fr;
+}
+
+.article-details{
+    padding-top: 15%;
+}
+
+.article{
+    max-width: 100%;
+    padding-top: 5%;
+}
+
+.article h2{
+    grid-column: 1 /span 3;
+}
+
+.article p{
+    max-width: 80%;
+}
+
+img{
+    padding-left: 30px;
+}
+
+.read-more{
+    color: #AF1B3F;
+}
+
+.filter{
+    position: absolute;
+    top: 27%;    
+    right: 115px;  
+    max-width: 300px;
+}
