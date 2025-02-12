@@ -61,23 +61,28 @@ nav{
 .article-content{
     display: grid;
     grid-template-columns: 400px 5fr;
+    padding-top: 15px;
 }
 
 .article-details{
     padding-top: 15%;
+    padding-right: 20px;
     line-height: 30px;
+    text-align: right;
 }
 
-.article{
+.article-book {
     max-width: 100%;
     padding-top: 5%;
+    border-left: 2px solid #EFC69B;
+    padding-left: 50px;
 }
 
-.article h2{
+.article-book h2{
     grid-column: 1 /span 3;
 }
 
-.article p{
+.article-book p{
     max-width: 80%;
 }
 
@@ -94,4 +99,7 @@ img{
     top: 27%;    
     right: 115px;  
     max-width: 300px;
+    border: 2px solid #EFC69B;
+    padding-right: 100px;
+    padding-bottom: 90%;
 }
