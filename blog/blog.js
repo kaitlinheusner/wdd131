@@ -46,7 +46,7 @@ function renderArticles(article){
             	<article class="article-content">
                 	<div>
                     	<section class="article-details">
-                        	<div>${article.date}</div>
+                        	<div id="date">${article.date}</div>
                         	<div>${article.ages}</div>
                         	<div>${article.genre}</div>
                         	<div>${article.stars}</div>

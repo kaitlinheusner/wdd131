@@ -71,11 +71,21 @@ nav{
     text-align: right;
 }
 
+#date{
+    font-size: 20px;
+}
+
 .article-book {
     max-width: 100%;
     padding-top: 5%;
     border-left: 2px solid #EFC69B;
     padding-left: 50px;
+}
+
+.article-book img {
+    display: block;
+    margin: 0 auto; 
+    margin-left: 20%;
 }
 
 .article-book h2{
