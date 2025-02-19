@@ -1,0 +1,96 @@
+#creditcard{
+    display: grid;
+    grid-template-columns: 200px 500px 200px;
+    grid-template-rows: 60px 300px 60px 60px;
+    position: relative;
+    margin-left: 25%;
+    margin-top: 100px;
+}
+
+p{
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    padding-top: 30px;
+    margin-left: 70px;
+}
+
+label{
+    display: block;
+}
+
+#creditcardFront{
+    display: grid;
+    grid-template-columns: 400px 200px;
+    grid-template-rows: 100px, 60px, 60px;
+    padding-left: 40px;
+    grid-gap: 20px;
+    grid-gap: 10px;
+    background-color: rgb(215, 215, 215);
+    box-shadow: 5px 5px 10px #585858;
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    z-index: 2;
+}
+
+.cardDetails{
+    grid-column: 1/span 2;
+    grid-row: 2;
+}
+
+#creditcardNumber{
+    width: 500px;
+    height: 30px;
+}
+
+.cardholderDetails{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#cardHolder{
+    height: 30px;
+}
+
+.expirationdateDetails{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#expirationDate{
+    width: 50px;
+    height: 30px;
+}
+
+#creditcardBack{
+    display: grid;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(215, 215, 215);
+    box-shadow: 5px 5px 10px #585858;
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    grid-column: 2/span 2;
+    grid-row: 1;
+    z-index: 1;
+    margin-top: 100px;
+
+}
+
+#cardVerification{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.cardverificationDetails{
+    width: 50px;
+    height: 30px;
+}
