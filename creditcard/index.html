@@ -6,9 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="creditcard.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src=""></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Credit Card</title>
 </head>
 <body>
     <form id="creditcard" action="creditcard">
@@ -37,24 +36,25 @@
                         required>
             </div>        
 
-            <div card="expirationdateDetails">
+            <div class="expirationdateDetails">
                 <label for="expirationDate">EXPIRATION</label>
-                    <input id="expirationDate" 
-                        name="expirationDate" 
-                        type="numbers" 
-                        pattern="[0-12]{2}"
+                    <input id="expirationMonth" 
+                        name="expirationMonth" 
+                        type="number" 
+                        pattern="(0[1-9]|1[0-2])"
                         placeholder="MM" 
                         required>   
                         
-                    <input id="expirationDate" 
-                        name="expirationDate" 
-                        type="numbers" 
-                        pattern="[0-12]{2}"
+                    <input id="expirationYear" 
+                        name="expirationYear" 
+                        type="number" 
+                        pattern="\d{2}"
                         placeholder="YY" 
                         required>   
             </div>     
         </div>
         <div id="creditcardBack">
+            <div class="grey-bar"></div>
             <div class="cardverificationDetails">
                 <label for="cardVerification">CVC/CVV</label>
                     <input id="cardVerification" 
