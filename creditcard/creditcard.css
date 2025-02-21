@@ -88,9 +88,9 @@ label{
     grid-row: 1;
     z-index: 1;
     margin-top: 100px;
-    box-sizing: border-box; /* Include padding in the element's size */
-    padding-top: 30px; /* Add padding to the top */
-    padding-bottom: 30px; /* Add padding to the bottom */
+    box-sizing: border-box; 
+    padding-top: 30px; 
+    padding-bottom: 30px; 
 }
 
 .grey-bar{
