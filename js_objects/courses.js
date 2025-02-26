@@ -37,13 +37,12 @@ function sectionTemplate(section){
 
 function renderSections(sections){
     const html = sections.map(sectionTemplate);
-    //for each element in the array, use sectionTemplate function on it = map which will return it 
     document.querySelector("#sections").innerHTML = html.join("");
 }
 
 document.querySelector("#enrollStudent").addEventListener("click", function(){
     const sectionNum = document.querySelector("#sectionNumber").value;
-    aCourse.changeEnrollment(sectionNum, true);
+    aCourse.changeEnrollment(sectionNum);
 })
 
 document.querySelector("#dropStudent").addEventListener("click", function(){
