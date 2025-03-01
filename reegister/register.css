@@ -87,13 +87,16 @@
     gap: 20px;
   }
 
-   #add {
+  #add {
         justify-self: center;
         grid-column: span 2;
         align-items: stretch;
         width: 100%;
    }
 
+  .hide{
+    display: none;
+  }
 
   .columns {
     display: flex;
