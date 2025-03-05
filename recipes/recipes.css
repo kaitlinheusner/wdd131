@@ -1,3 +1,63 @@
-a{
-    font-size: 0.6em;
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+--primary-color: #1B98E0;
+--secondary-color: #59c3c3;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: "Amatic SC", sans-serif;
+}
+
+/* *{
+    border: 1px solid red;
+} */
+
+header{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-logo{
+    height:80px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+body{
+    font-family: var(--secondary-font);
+}
+
+.search-row{
+    display: flex;
+    img{
+        height: 16px;
+    }
+    input{
+        width: 100%;
+        border-radius: 5px;
+    }
+    button{
+        border-radius: 5px;
+    }
+    justify-content: center;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    .recipe-image{
+        height: 50%;
+    }
+}
+
+.social {
+    img{
+        height: 30px;
+    }
 }
