@@ -65,7 +65,7 @@ h2{
 
     .recipe-image{
         height: 50%;
-        width: auto;
+        width: autp;
     }
 
     .tag-row{
@@ -107,7 +107,7 @@ a{
 }
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 600px){
     .search-row input{
         width: 80%;
     }
