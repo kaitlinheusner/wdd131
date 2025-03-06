@@ -37,6 +37,7 @@ body{
     display: flex;
     img{
         height: 16px;
+        width: auto;
     }
     
     input{
@@ -64,6 +65,7 @@ h2{
 
     .recipe-image{
         height: 50%;
+        width: auto;
     }
 
     .tag-row{
@@ -84,23 +86,6 @@ h2{
     }
 }
 
-
-.social {
-    display: flex;
-    margin-top: 10%;
-    justify-content: center;
-    img{
-        height: 70px;
-    }
-}
-
-a{
-    display: flex;
-    justify-self: center;
-    padding-top: 20px;
-    font-size: 25px;
-}
-
 .social {
     display: flex;
     margin-top: 20px;
@@ -109,6 +94,7 @@ a{
 
 .social img{
         height: 70px;
+        width: auto;
 }
 
 a{
@@ -117,6 +103,7 @@ a{
     padding-top: 20px;
     font-size: 25px;
 }
+
 
 @media screen and (min-width: 700px){
     .search-row input{
