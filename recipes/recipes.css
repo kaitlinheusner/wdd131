@@ -132,7 +132,7 @@ a{
     }
     .recipe-image{
         height: 60%;
-        width: 60%;
+        width: auto;
         align-self: center;
     }
 
