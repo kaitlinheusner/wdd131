@@ -99,7 +99,7 @@ h2{
 
 a{
     display: flex;
-    justify-self: center;
+    justify-content: center;
     padding-top: 20px;
     font-size: 25px;
     text-decoration: none;
