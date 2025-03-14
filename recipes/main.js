@@ -104,6 +104,3 @@ function searchHandler(event){
 }
 
 document.getElementById("search-button").addEventListener("click", searchHandler);
-
-const recipe = getRandomListEntry(recipes)
-console.log(recipeTemplate(recipe));
