@@ -24,34 +24,13 @@
         <form action="#" class="search">
             <div class="search-row">
                 <input id ="searchform" type="search" placeholder="Find a recipe">
-                <button type="button">
+                <button id ="search-button" type="button">
                     <img src="images/search.svg" alt="Search icon">
                 </button>
             </div>
         </form>
-        <hr>
-        <article class="recipe">
-            <img class="recipe-image" src="images/apple-crisp.jpg" alt="Apple Crisp with Ice Cream in a bowl">
-            <div class="recipe-content">
-                <div class="tag-row">
-                    <span class="tag">dessert</span>
-                </div>
-                <div class = "main-text">
-                    <h2>Apple Crisp</h2>
-                    <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-                    <span
-	                    class="rating"
-	                    role="img"
-	                    aria-label="Rating: 4 out of 5 stars">
-	                        <span aria-hidden="true" class="icon-star">⭐</span>
-	                        <span aria-hidden="true" class="icon-star">⭐</span>
-	                        <span aria-hidden="true" class="icon-star">⭐</span>
-	                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
-	                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                </div>
-            </div>
-        </article>
+        <div id="recipesContainer">
+        </div>
     </main>
     <footer>
         <div class="footer-content">

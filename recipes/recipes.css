@@ -41,13 +41,17 @@ body{
     }
     
     input{
-        width: 100%;
+        width: 90%;
+        height: 50px;
         border-radius: 5px;
+        font-size: 30px;
     }
 
     button{
         border-radius: 5px;
+        width: 5%;
     }
+
     justify-content: center;
 }
 
@@ -62,19 +66,28 @@ h2{
     flex-direction: column;
     border: 1px solid black;
     padding: 20px;
+    align-items: flex-start;
 
     .recipe-image{
         height: 50%;
-        width: autp;
+        width: auto;
     }
 
-    .tag-row{
-        margin-top: 30px;
-        padding: 10px;
+    .tag{
+        display: inline-block;
+        padding: 5px 10px;
         border: 1px solid black;
         font-size: 2em;
+        margin-top: 30px;
         width: fit-content;
-        height: 25%;
+        gap: 5px;
+    }
+
+    .tag-container{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     p {
@@ -119,8 +132,8 @@ a{
 
     .recipe{
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
         border-radius: 5px;
         gap: 20px;
         padding: 30px;
@@ -131,25 +144,32 @@ a{
         
     }
     .recipe-image{
-        height: 60%;
-        width: 60%;
+        height: 100%;
+        width: 100%;
         align-self: center;
     }
 
     .recipe-content{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
-    .tag-row{
-        display: block;
-        margin-left: 10px;
-        padding: 10px;
+    .tag{
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 10px;
         border: 1px solid black;
         font-size: 2em;
+        margin-top: 30px;
         width: fit-content;
-        height: auto;
-        align-self: flex-start;
+    }
+
+    .tag-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 5%;
     }
 
     .main-text{
@@ -170,10 +190,7 @@ a{
     }
 
     .footer-content{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
+        display: block;
         width: 95%;
         margin: 0 auto;
         box-sizing: border-box;
@@ -225,15 +242,19 @@ a{
         flex-direction: column;
     }
 
-    .tag-row{
-        display: block;
-        margin-left: 10px;
-        padding: 10px;
+    .tag{
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 10px;
         border: 1px solid black;
         font-size: 2em;
+        margin-top: 30px;
         width: fit-content;
-        height: auto;
-        align-self: flex-start;
+    }
+
+    .tag-container{
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .main-text{
