@@ -69,8 +69,10 @@ h2{
     align-items: flex-start;
 
     .recipe-image{
-        height: 50%;
-        width: auto;
+        max-width: 100%;  
+        height: auto;      
+        object-fit: cover; 
+        display: block;
     }
 
     .tag{
@@ -145,10 +147,10 @@ a{
         
     }
     .recipe-image{
-        max-width: 60%;
-        width: 50%;
-        height: auto;
-        object-fit: cover;
+        max-width: 100%;  
+        height: auto;      
+        object-fit: cover; 
+        display: block;
     }
 
     .recipe-content{
