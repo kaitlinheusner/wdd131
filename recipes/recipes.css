@@ -141,12 +141,14 @@ a{
         justify-content: center;
         margin: 0 auto;
         margin-top: 30px;
+        max-width: 100%; 
         
     }
     .recipe-image{
-        height: 100%;
-        width: 100%;
-        align-self: center;
+        max-width: 60%;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
     }
 
     .recipe-content{
@@ -234,7 +236,10 @@ a{
         
     }
     .recipe-image{
-        height: 50%;
+        max-width: 100%;  
+        height: auto;      
+        object-fit: cover; 
+        display: block;
     }
 
     .recipe-content{
