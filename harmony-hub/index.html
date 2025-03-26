@@ -24,7 +24,9 @@
         <p>Music is a form of expression which is why there are so many genres to explore! While this makes it harder to find new songs, it also opens up many more possibilities for discoveries. To help, we will give an overview of the main genres that everyone should know. It is important to note that many songs blend multiple genres together, making it hard to categorize them into a single genre. After all, music is about creative expression, which is why you will find different styles, rhythms and beats in every song! </p>
 
         <div class="genre-description">
-            <div class="genre-group-1">
+
+            <img id="pop-concert" src="images/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg" alt="Concert">
+            <div class="genre-group">
                 <li><h1>Pop:</h1>
                     <p>Pop music is short for “popular music” and is designed to be appealing to mainstream media. Its characteristics include catchy melodies, danceable rhythms, and memorable lyrics. This genre is incredibly versatile and often incorporates elements from other genres and styles! </p>
                 </li>
@@ -37,8 +39,8 @@
                     <p>Hip-hop began in the 1970s in New York City!  It is widely known for including rap which typically involves social commentary and storytelling. Hip-hop commonly includes strong beats, and an emphasis on lyrical flow.  </p>
                 </li>
             </div>
-            <img src="images/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg" alt="Concert">
-            <div class="genre-group-2">
+
+            <div class="genre-group">
                 <li> <h1>Jazz:</h1> 
                     <p>Jazz started in African American communities in the late 19th and early 20th centuries. Recognized for its improvisation and complex harmonies, it is a genre that encourages spontaneity and individual expression. Key instruments include trumpet, piano, and saxophone. </p>
                 </li>
@@ -47,8 +49,11 @@
                     <p>Electronic music emerged in the mid-20th century with the rise of dance clubs and rave culture. This music is produced through electronic devices such as synthesizers, drum machines, and computers. It tends to be instrumental and focuses on beats and sound textures. </p>
                 </li>
             </div>
-            <img src="images/florencia-viadana-F7W1QP62psQ-unsplash.jpg" alt="Vinyl Records">
-            <div class="genre-group-3">
+
+            <img id="vinyl-records" src="images/florencia-viadana-F7W1QP62psQ-unsplash.jpg" alt="Vinyl Records">
+
+            <img id="country-concert" src="images/raul-najera-OsTJNX83lC0-unsplash.jpg" alt="Country Concert">
+            <div class="genre-group">
                 <li> <h1>Country:</h1>
                     <p>Country music started in the early 20th century in southern United States. It features storytelling lyrics with themes of love, heartbreak, family and work. Country music is often performed with string instruments such as the guitar, banjo, fiddle, and steel guitar.  </p>
                 </li>
@@ -57,39 +62,59 @@
                     <p>Rhythm and Blues (R&B) and Soul music originated from African American musical traditions. It is known for its smooth rhythms, strong vocal performances, and elements of funk, jazz, and gospel. Soul music derived itself from R&B in the 1960s places an emphasis on powerful vocal delivery, with compelling lyrics that often focus on love, hardship, and spirituality. </p>
                 </li>
             </div>
-            <img src="images/raul-najera-OsTJNX83lC0-unsplash.jpg" alt="Country Concert">
+            
         </div>
-        <h1>Collaborate with our Community!</h1>
-        <p>Do you have a favorite song that you would like to share? Fill out the form below to recommend your favorite songs!</p>
-        <div class="form"> 
-            <form id="song-rec" action="song-recommendation">
-            <label for="name">Name: </label>
-            <input type="text"
-            name = "name"
-            id="name"
-            placeholder="Name"
-            required>
 
-            <label for="song">Song: </label>
-            <input type="text"
-            id="song-name"
-            placeholder="Song Name"
-            required>
+        <div class="reccomendation-form">
+            <h1>Collaborate with our Community!</h1>
+            <p>Do you have a favorite song that you would like to share? Fill out the form below to recommend your favorite songs!</p>
+                <form id="song-rec" action="song-recommendation">
+                <label for="name">Name: </label>
+                <input type="text"
+                name = "name"
+                id="name"
+                placeholder="Name"
+                required>
 
-            <label for="artist">Artist(s): </label>
-            <input type="text"
-            id="artist-name"
-            placeholder="Artist(s) Name"
-            required>
+                <label for="song">Song: </label>
+                <input type="text"
+                id="song-name"
+                placeholder="Song Name"
+                required>
 
-            <label for="genre">Genre(s):</label>
-            <input type="text"
-            id="genre"
-            placeholder="Genre(s)"
-            required>
+                <label for="artist">Artist(s): </label>
+                <input type="text"
+                id="artist-name"
+                placeholder="Artist(s) Name"
+                required>
 
-        </form>
+                <label for="genre">Genre(s):</label>
+                <input type="text"
+                id="genre"
+                placeholder="Genre(s)"
+                required>
+
+            </form>
+            <button>Submit</button>
+        </div>
     </div>
     </main>
+    <footer>
+        <img class="footer-logo" src="images/Harmony.png" alt="Harmony Hub Website Logo">
+            <p>Harmony Hub &copy; 2025</p>
+            <a class="footer-links" href="site-plan.html">Site Plan</a>
+            <a class="footer-links" href="#">Terms of Service</a>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank" >
+                    <img src="images/facebook.png" alt="Facebook Logo" class="fa fa-facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" >
+                    <img src="images/twitter.png" alt="Twitter Logo" class="fa fa-twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" >
+                    <img src="images/instagram.png" alt="instagram Logo" class="fa fa-instagram">
+                </a>
+            </div>
+    </footer>
 </body>
 </html>
