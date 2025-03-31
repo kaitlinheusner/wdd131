@@ -54,4 +54,4 @@ const songs = [
     { name: 'Scary Monsters and Nice Sprites', artist: ['Skrillex'], genres: ['Electronic'], duration: '4:03' }
 ];
 
-export default songs
+export default songs;

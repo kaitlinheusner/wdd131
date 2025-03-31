@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Hub</title>
     <link rel="stylesheet" href="hub.css">
+    <script type="module" src="hub.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Hub</a></li> 
+                <li><a href="the-hub.html">Hub</a></li> 
             </ul>
             <div id="logo-container">
                 <img id="logo"src="images/Harmony.png" alt="Harmony logo">
@@ -20,93 +21,16 @@
     </header>
     <main>
         <h1>Find Your Next Favorite Tune!</h1>
-        <p>Whether you want to randomly want to find new songs or are eager to explore, this Hub allows you to search for songs based on an artist or genre. If you have no idea where to start, look at the songs that we have randomly chosen below!</p>
+        <p id="hub-description">Whether you want to randomly want to find new songs or are eager to explore, this Hub allows you to search for songs based on an artist or genre. If you have no idea where to start, look at the songs that we have randomly chosen below!</p>
         <form action="#" class="search">
             <div class="search-row">
-                <input id ="searchform" type="search" placeholder="Find a recipe">
+                <input id ="searchform" type="search" placeholder="Find a song">
                 <button id ="search-button" type="button">
                     <img src="images/search.svg" alt="Search icon">
                 </button>
             </div>
         </form>
-        <article class="song-card">
-            <img class="song-image" src="#" alt="Song">
-            <div class="recipe-content">
-                <div class="tag-container">
-                   Pop
-                </div>
-                <div class = "main-text">
-                    <p>Song: </p>
-                    <p>Artist: </p>
-                    <p>Genre(s):</p>
-                </div>
-            </div>
-        </article>
-        <article class="song-card">
-            <img class="song-image" src="#" alt="Song">
-            <div class="recipe-content">
-                <div class="tag-container">
-                   Pop
-                </div>
-                <div class = "main-text">
-                    <p>Song: </p>
-                    <p>Artist: </p>
-                    <p>Genre(s):</p>
-                </div>
-            </div>
-        </article>
-        <article class="song-card">
-            <img class="song-image" src="#" alt="Song">
-            <div class="recipe-content">
-                <div class="tag-container">
-                   Pop
-                </div>
-                <div class = "main-text">
-                    <p>Song: </p>
-                    <p>Artist: </p>
-                    <p>Genre(s):</p>
-                </div>
-            </div>
-        </article>
-        <article class="song-card">
-            <img class="song-image" src="#" alt="Song">
-            <div class="recipe-content">
-                <div class="tag-container">
-                   Pop
-                </div>
-                <div class = "main-text">
-                    <p>Song: </p>
-                    <p>Artist: </p>
-                    <p>Genre(s):</p>
-                </div>
-            </div>
-        </article>
-        <article class="song-card">
-            <img class="song-image" src="#" alt="Song">
-            <div class="recipe-content">
-                <div class="tag-container">
-                   Pop
-                </div>
-                <div class = "main-text">
-                    <p>Song: </p>
-                    <p>Artist: </p>
-                    <p>Genre(s):</p>
-                </div>
-            </div>
-        </article>
-        <article class="song-card">
-            <img class="song-image" src="#" alt="Song">
-            <div class="recipe-content">
-                <div class="tag-container">
-                   Pop
-                </div>
-                <div class = "main-text">
-                    <p>Song: </p>
-                    <p>Artist: </p>
-                    <p>Genre(s):</p>
-                </div>
-            </div>
-        </article>
+        <div class="song-gallery"></div>
     </main>
     
     <footer>

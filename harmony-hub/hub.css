@@ -55,6 +55,94 @@ li{
 }
 
 
+.search-row{
+    display: flex;
+    img{
+        height: 16px;
+        width: auto;
+    }
+    
+    input{
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 30px;
+    }
+
+    button{
+        border-radius: 5px;
+        width: 5%;
+    }
+
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 45px;
+    justify-self: center;
+}
+
+#hub-description{
+    font-size: 25px;
+    justify-self: center;
+    padding-left: 20px;
+}
+
+
+.tag{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    margin-top: 10px;
+    width: fit-content;
+    gap: 5px;
+}
+
+.tag-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.song-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.song-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 500px;
+    padding: 10px;
+    height: fit-content;
+    padding: 20px;
+}
+
+.main-text{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.song-image{
+    width: 30%;
+    object-fit: cover;
+}
+
+p{
+    font-size: 20px;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
