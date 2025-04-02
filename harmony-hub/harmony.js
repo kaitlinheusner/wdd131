@@ -26,7 +26,7 @@ function submitForm(event) {
     event.preventDefault();
     let userName = document.querySelector("input[name='name']").value;
     let songName = document.querySelector("input[name='song']").value;
-    let artistInputs = document.querySelectorAll("input[name= 'artist']").value;
+    let artistInputs = document.querySelector("input[name= 'artist']").value;
     let artistName = Array.from(artistInputs).map(input => input.value).join(", ");
 
     let info = {
