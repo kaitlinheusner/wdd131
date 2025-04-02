@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harmony Hub</title>
     <link rel="stylesheet" href="harmony.css">
+    <script src="harmony.js" type="module"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="the-hub.html">Hub</a></li> 
-            </ul>
+        <nav> 
             <div id="logo-container">
                 <img id="logo"src="images/Harmony.png" alt="Harmony logo">
+            </div>
+            <button class="menu-button"><img src="images/hamburger-menu-4.png" alt="Menu button"></button>
+            <div class="menu hide">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="the-hub.html">Hub</a></li> 
+                </ul>
             </div>
         </nav>
     </header>
@@ -68,7 +72,7 @@
         <div class="reccomendation-form">
             <h1>Collaborate with our Community!</h1>
             <p>Do you have a favorite song that you would like to share? Fill out the form below to recommend your favorite songs!</p>
-                <form id="song-rec" action="song-recommendation">
+                <form id="song-rec">
                 <label for="name">Name: </label>
                 <input type="text"
                 name = "name"
@@ -78,24 +82,27 @@
 
                 <label for="song">Song: </label>
                 <input type="text"
+                name="name"
                 id="song-name"
                 placeholder="Song Name"
                 required>
 
                 <label for="artist">Artist(s): </label>
                 <input type="text"
+                name="name"
                 id="artist-name"
                 placeholder="Artist(s) Name"
                 required>
 
                 <label for="genre">Genre(s):</label>
                 <input type="text"
+                name="name"
                 id="genre"
                 placeholder="Genre(s)"
                 required>
-
+                
+                <button>Submit</button>
             </form>
-            <button>Submit</button>
         </div>
     </div>
     </main>

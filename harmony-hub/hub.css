@@ -34,8 +34,6 @@ nav {
 .menu-button {
     background: none; 
     border: none; 
-    padding: 0; 
-    cursor: pointer; 
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -102,8 +100,8 @@ h1{
     font-size: 25px;
     justify-self: center;
     padding-left: 20px;
+    font-family: var(--paragraph-font);
 }
-
 
 .tag{
     display: inline-block;
@@ -156,6 +154,7 @@ h1{
 
 p{
     font-size: 20px;
+    font-family: var(--paragraph-font);
 }
 
 footer{
@@ -299,7 +298,6 @@ ul{
     flex: 1;
 }
 
-
 a, h1{
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -385,11 +383,12 @@ h1{
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
-    width: 500px;
+    width: 80%;
     padding: 10px;
     height: fit-content;
     padding: 20px;
 }
+
 
 .main-text{
     display: block;
