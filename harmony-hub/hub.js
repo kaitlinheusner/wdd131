@@ -57,7 +57,7 @@ function filter(query) {
     query = query.toLowerCase()
     const filtered = songs.filter(song => 
         song.name.toLowerCase().includes(query) ||
-        song.artist.toLowerCase().includes(query) || 
+        song.artist.join(' ').toLowerCase().includes(query) || 
         (Array.isArray(song.genres) && song.genres.some(genre => genre.toLowerCase().includes(query)))
     );
 
@@ -74,3 +74,24 @@ function searchHandler(event){
 }
 
 document.getElementById("search-button").addEventListener("click", searchHandler);
+
+const menuButton = document.querySelector(".menu-button")
+
+function toggleMenu(){
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("hide");
+}
+
+menuButton.addEventListener("click", toggleMenu);
+
+function handleResize(){
+    const menu = document.querySelector(".menu");
+    if (window.innerWidth > 1000){
+        menu.classList.remove("hide");
+    } else{
+        menu.classList.add("hide");
+    }
+}
+
+handleResize();
+window.addEventListener("resize", handleResize);
