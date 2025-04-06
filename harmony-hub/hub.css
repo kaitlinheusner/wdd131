@@ -169,7 +169,7 @@ p{
 }
 
 .credits{
-    color: white;
+    color: var(--secondary-color);
 }
 
 #copyright{
