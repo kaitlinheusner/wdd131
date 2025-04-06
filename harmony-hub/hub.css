@@ -65,6 +65,9 @@ li{
     margin-right: 40px;
 }
 
+main {
+    margin-left: 5px;
+}
 
 #logo{
     justify-content: center;
