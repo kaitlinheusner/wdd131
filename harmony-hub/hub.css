@@ -71,7 +71,7 @@ li{
     display: flex;
     img{
         height: 16px;
-        width: auto;
+        width: fit-content;
     }
     
     input{
