@@ -56,7 +56,6 @@ h1{
 }
 
 a{
-    font-family: var(--paragraph-font);
     color: white;
 }
 
@@ -170,6 +169,7 @@ p{
 
 .credits{
     color: var(--secondary-color);
+    font-family: var(--paragraph-font);
 }
 
 #copyright{

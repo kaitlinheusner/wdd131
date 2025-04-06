@@ -9,7 +9,7 @@ function songTemplate (song){
     return `
             <article class="song-card">
                 <img class="song-image" src="images/charlesdeluvio-6k4HkET8dPM-unsplash.jpg" alt="Song Player">
-                <p "credits" >Photo by <a class="credits" href="https://unsplash.com/@charlesdeluvio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">charlesdeluvio</a> on <a class="credits" href="https://unsplash.com/photos/black-remote-control-on-white-textile-6k4HkET8dPM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p> 
+                <p>Photo by <a class="credits" href="https://unsplash.com/@charlesdeluvio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">charlesdeluvio</a> on <a class="credits" href="https://unsplash.com/photos/black-remote-control-on-white-textile-6k4HkET8dPM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p> 
                 <div class="song-content">
                     <div class="tag-container">
                        ${tagsTemplate(song.genres)}
