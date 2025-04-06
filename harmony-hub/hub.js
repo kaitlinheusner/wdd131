@@ -6,7 +6,7 @@ function getRandomSongs(songList, count = 6) {
 }
 
 function songTemplate (song){
-    return ` <div class="song-gallery">
+    return `
             <article class="song-card">
                 <img class="song-image" src="images/charlesdeluvio-6k4HkET8dPM-unsplash.jpg" alt="Song Player">
                 <p "credits" >Photo by <a class="credits" href="https://unsplash.com/@charlesdeluvio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">charlesdeluvio</a> on <a class="credits" href="https://unsplash.com/photos/black-remote-control-on-white-textile-6k4HkET8dPM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p> 
@@ -20,8 +20,7 @@ function songTemplate (song){
                         <p>Genre(s): ${song.genres}</p>
                     </div>
                 </div>
-            </article>
-        </div>`
+            </article>`
 }
 
 

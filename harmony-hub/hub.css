@@ -393,10 +393,9 @@ h1{
 .song-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
     justify-content: center;
-    max-width: 80%;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .song-card{
