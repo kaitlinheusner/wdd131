@@ -25,7 +25,6 @@ nav {
     justify-content: center;
     padding-bottom: 1em;
     margin: 0 auto;
-    color: white;
 }
 
 .menu{
@@ -53,10 +52,12 @@ nav {
 
 a, h1{
     font-family: var(--heading-font);
+    color: #008768;
 }
 
 li{
     list-style: none;
+    color: white;
 }
 
 
@@ -144,7 +145,6 @@ footer{
     margin-top: 20px;
     margin: 0 auto;
     gap: 10px;
-    color: white;
 }
 
 .footer-logo{
@@ -158,12 +158,14 @@ footer p{
     font-family: var(--paragraph-font);
     align-self: center;
     font-size: 20px;
+    color: white;
 }
 
 .footer-links {
     font-family: var(--paragraph-font);
     align-self: center;
     font-size: 20px;
+    color: white;
 }
 
 .social{

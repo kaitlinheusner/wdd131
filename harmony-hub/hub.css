@@ -52,10 +52,12 @@ nav {
 
 a, h1{
     font-family: var(--heading-font);
+    color: #008768;
 }
 
 li{
     list-style: none;
+    color: white;
 }
 
 
@@ -165,7 +167,6 @@ footer{
     background-color: var(--secondary-color);
     margin-top: 20px;
     gap: 10px;
-    color: white;
 }
 
 .footer-logo{
