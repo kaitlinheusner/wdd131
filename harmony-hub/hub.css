@@ -168,6 +168,10 @@ p{
     font-family: var(--paragraph-font);
 }
 
+p a{
+    color: var(--primary-color);
+}
+
 footer{ 
     display: flex;
     flex-direction: column; 
