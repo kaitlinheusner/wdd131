@@ -191,6 +191,7 @@ footer{
 
 footer p{
     font-family: var(--paragraph-font);
+    color: white;
     align-self: center;
     font-size: 20px;
 }
