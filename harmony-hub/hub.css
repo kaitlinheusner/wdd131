@@ -50,9 +50,13 @@ nav {
     height: auto;
 }
 
-a, h1{
+h1{
     font-family: var(--heading-font);
     color: #008768;
+}
+
+a{
+    color: white;
 }
 
 li{
