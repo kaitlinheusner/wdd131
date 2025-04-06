@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-    --primary-color: #56BB9B;
+    --primary-color: #008768;
     --secondary-color:#254441;
     --accent1-color: #ff6f59;
     --accent2-color: #ef3054;
@@ -146,6 +146,7 @@ footer{
     background-color: var(--secondary-color);
     margin-top: 20px;
     margin: 0 auto;
+    gap: 10px;
 }
 
 .footer-logo{
@@ -159,11 +160,13 @@ footer p{
     color: var(--primary-color);
     font-family: var(--paragraph-font);
     align-self: center;
+    font-size: 20px;
 }
 
 .footer-links {
     font-family: var(--paragraph-font);
     align-self: center;
+    font-size: 20px;
 }
 
 .social{
