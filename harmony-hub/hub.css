@@ -168,7 +168,7 @@ p{
     font-family: var(--paragraph-font);
 }
 
-p a{
+#copyright{
     color: var(--primary-color);
 }
 
