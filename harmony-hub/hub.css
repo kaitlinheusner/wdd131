@@ -168,8 +168,12 @@ p{
     font-family: var(--paragraph-font);
 }
 
+.credits{
+    color: white;
+}
+
 #copyright{
-    color: var(--primary-color);
+    color: white;
 }
 
 footer{ 
