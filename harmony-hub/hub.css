@@ -98,7 +98,7 @@ main {
     font-size: 30px;
 }
 
-button{
+.search-button{
     border-radius: 5px;
     width: auto;
 }
