@@ -73,7 +73,6 @@ li{
     width: 15%;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 15px;
 }
 
 main{
@@ -262,13 +261,13 @@ footer p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 90%;
     }
 
     input{
         display: block;
         height: 40px;
-        width: 100%;
+        width: 90%;
     }
 
     footer{ 
