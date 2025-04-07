@@ -228,6 +228,11 @@ footer p{
         height: auto;
     }
 
+    
+    main{
+        margin: 10px;
+    }
+
     .genre-description {
         margin-top: 5%;
         display: grid;
