@@ -60,7 +60,9 @@ h1{
 }
 
 a{
+    font-family: var(--heading-font);
     color: white;
+    font-size: 20px;
 }
 
 li{
@@ -164,14 +166,14 @@ footer{
 }
 
 footer p{
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     align-self: center;
     font-size: 20px;
     color: white;
 }
 
 .footer-links {
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     align-self: center;
     font-size: 20px;
     color: white;
@@ -295,12 +297,12 @@ footer p{
     }
 
     footer p{
-        font-family: var(--paragraph-font);
+        font-family: var(--heading-font);
         align-self: center;
     }
 
     .footer-links {
-        font-family: var(--paragraph-font);
+        font-family: var(--heading-font);
         align-self: center;
     }
 
@@ -450,13 +452,13 @@ footer p{
     }
 
     footer p{
-        font-family: var(--paragraph-font);
+        font-family: var(--heading-font);
         align-self: center;
         margin-right: auto;
     }
 
     .footer-links {
-        font-family: var(--paragraph-font);
+        font-family: var(--heading-font);
         align-self: center;
         margin-right: auto;
     }

@@ -60,6 +60,8 @@ h1{
 
 a{
     color: white;
+    font-family: var(--heading-font);
+    font: 20px;
 }
 
 li{
@@ -270,12 +272,12 @@ footer{
 }
 
 footer p{
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     align-self: center;
 }
 
 .footer-links {
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     align-self: center;
 }
 
@@ -423,13 +425,13 @@ footer{
 }
 
 footer p{
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     align-self: center;
     margin-right: auto;
 }
 
 .footer-links {
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     align-self: center;
     margin-right: auto;
 }
