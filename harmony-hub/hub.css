@@ -92,7 +92,7 @@ main {
 }
 
 .search-row input{
-    width: 80%;
+    width: 90%;
     height: 50px;
     border-radius: 5px;
     font-size: 30px;
@@ -100,7 +100,7 @@ main {
 
 button{
     border-radius: 5px;
-    width: 5%;
+    width: auto;
 }
 
 
@@ -340,29 +340,6 @@ li{
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 100px;
-}
-
-.search-row{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.search-row img{
-    height: 16px;
-    width: fit-content;
-}
-
-.search-row input{
-    width: 90%;
-    height: 50px;
-    border-radius: 5px;
-    font-size: 30px;
-}
-
-button{
-    border-radius: 5px;
-    width: 5%;
 }
 
 h1{
