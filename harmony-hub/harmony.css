@@ -46,7 +46,7 @@ nav {
 }
 
 .hide{
-    display: none
+    display: none;
 }
 
 .menu-button img {
@@ -145,6 +145,10 @@ input{
 button{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#summary p{
+    color: var(--primary-color);
 }
 
 footer{ 
