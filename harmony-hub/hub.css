@@ -49,7 +49,7 @@ nav {
 }
 
 .menu-button img {
-    width: 50px; 
+    width: fit-content; 
     height: auto;
 }
 
